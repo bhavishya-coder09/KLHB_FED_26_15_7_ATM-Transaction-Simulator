@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class ATMTransactionSimulator {
+
+    static Scanner sc = new Scanner(System.in);
+
+    static double balance = 10000;
+    static int pin = 1234;
+
+    // Method to check balance
+    static void checkBalance() {
+        System.out.println("Current Balance: Rs." + balance);
+    }
