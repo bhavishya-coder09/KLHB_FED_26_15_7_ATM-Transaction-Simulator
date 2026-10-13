@@ -1,0 +1,7 @@
+    static int readInt() {
+        if (!sc.hasNextInt()) {
+            sc.next();
+            return -1;
+        }
+        return sc.nextInt();
+    }
