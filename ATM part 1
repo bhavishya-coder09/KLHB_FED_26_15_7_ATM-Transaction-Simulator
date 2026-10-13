@@ -1,0 +1,10 @@
+import java.util.Scanner;
+public class ATMFull {
+    static Scanner sc = new Scanner(System.in);
+    static int balance = 50000;
+    static int pin = 1234;
+    static int withdrawnToday = 0;
+    static String[] history = new String[5];
+    static int count = 0;
+    static int[][] first = new int[5][4];
+    static int total = 0;
