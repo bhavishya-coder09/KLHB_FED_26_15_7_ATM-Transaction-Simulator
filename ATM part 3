@@ -1,0 +1,10 @@
+    static boolean login() {
+        for (int tries = 1; tries <= 3; tries++) {
+            System.out.print("Enter your PIN: ");
+            if (readInt() == pin) {
+                return true;
+            }
+            System.out.println("Wrong PIN. Attempts left: " + (3 - tries));
+        }
+        return false;
+    }
