@@ -1,0 +1,6 @@
+MENU
+
+static void showMenu() {
+        System.out.println("\n1. Withdraw\n2. Deposit\n3. Check balance\n4. Mini statement\n5. Change PIN\n6. Exit");
+        System.out.print("Choose an option: ");
+    }
