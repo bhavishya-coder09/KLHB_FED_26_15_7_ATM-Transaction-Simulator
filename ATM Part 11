@@ -1,0 +1,22 @@
+    static void withdraw() {
+        System.out.print("Enter amount to withdraw: ");
+        int amount = readInt();
+        if (!validAmount(amount)) {
+            return;
+        }
+        if (amount > 20000) {
+            System.out.println("Limit is Rs. 20000 per withdrawal");
+            return;
+        }
+        if (withdrawnToday + amount > 40000) {
+            System.out.println("Daily limit of Rs. 40000 crossed");
+            return;
+        }
+        if (amount > balance) {
+            System.out.println("Not enough balance");
+            return;
+        }
+        findPossibilities(amount);
+        int show = showPossibilities();
+        choosePossibility(amount, show);
+    }
