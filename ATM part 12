@@ -1,0 +1,14 @@
+    static void deposit() {
+        System.out.print("Enter amount to deposit: ");
+        int amount = readInt();
+        if (!validAmount(amount)) {
+            return;
+        }
+        if (amount > 50000) {
+            System.out.println("Limit is Rs. 50000 per deposit");
+            return;
+        }
+        balance = balance + amount;
+        addHistory("Deposited Rs. " + amount);
+        System.out.println("Deposited. New balance: Rs. " + balance);
+    }
