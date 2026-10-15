@@ -1,0 +1,10 @@
+    static int showPossibilities() {
+        int show = Math.min(5, total);
+        System.out.println("Note possibilities:");
+        for (int i = 0; i < show; i++) {
+            System.out.println("Possibility " + (i + 1));
+            printNotes(first[i][0], first[i][1], first[i][2], first[i][3]);
+        }
+        System.out.println("Total possibilities: " + total);
+        return show;
+    }
