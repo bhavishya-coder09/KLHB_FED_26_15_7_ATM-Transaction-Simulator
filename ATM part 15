@@ -1,0 +1,29 @@
+    public static void main(String[] args) {
+        if (!login()) {
+            System.out.println("Card blocked");
+            return;
+        }
+        boolean running = true;
+        while (running) {
+            showMenu();
+            int choice = readInt();
+            if (choice == 1) {
+                withdraw();
+            } else if (choice == 2) {
+                deposit();
+            } else if (choice == 3) {
+                checkBalance();
+            } else if (choice == 4) {
+                miniStatement();
+            } else if (choice == 5) {
+                changePin();
+            } else if (choice == 6) {
+                System.out.println("Thank you. Goodbye!");
+                running = false;
+            } else {
+                System.out.println("Wrong input, enter 1 to 6");
+            }
+        }
+        sc.close();
+    }
+}
