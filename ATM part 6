@@ -1,0 +1,6 @@
+ static void printNotes(int a, int b, int c, int d) {
+        if (a > 0) System.out.println("  " + a + " note(s) of 2000");
+        if (b > 0) System.out.println("  " + b + " note(s) of 500");
+        if (c > 0) System.out.println("  " + c + " note(s) of 200");
+        if (d > 0) System.out.println("  " + d + " note(s) of 100");
+    }
