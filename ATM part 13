@@ -1,0 +1,12 @@
+    static void checkBalance() {
+        System.out.println("Your balance is Rs. " + balance);
+    }
+    static void miniStatement() {
+        if (count == 0) {
+            System.out.println("No transactions yet");
+        }
+        for (int i = count - 1; i >= 0; i--) {
+            System.out.println(history[i]);
+        }
+        System.out.println("Balance: Rs. " + balance);
+    }
